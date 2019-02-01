@@ -55,7 +55,8 @@ private OnClickMyFragmentListner mCallback;
             @Override
             public void onClick(View view, int position) {
 
-mCallback.ReturnStatementMine(position);
+            mCallback.ReturnStatementMine(position);
+
 
             }
 

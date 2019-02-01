@@ -35,6 +35,7 @@ TextView textView2;
 
 
     public void setView(int i) {
+
         textView1.setText(DataSet.arrayList.get(i).getmTitle());
         textView2.setText(DataSet.arrayList.get(i).getmTitle());
 

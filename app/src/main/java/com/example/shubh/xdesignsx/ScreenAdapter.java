@@ -1,5 +1,6 @@
 package com.example.shubh.xdesignsx;
 
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.ViewHolder;
@@ -16,7 +17,11 @@ public class ScreenAdapter extends RecyclerView.Adapter<ScreenAdapter.ViewHolder
     @Override
     public ScreenAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View v=LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.recyler_list,viewGroup,false);
+     v.setElevation(2);
+     v.setPadding(12,12,12,12);
+     v.setBackgroundColor(Color.GRAY);
         ViewHolder vh=new ViewHolder(v);
+
         return vh;
 
 
@@ -50,6 +55,7 @@ public class ScreenAdapter extends RecyclerView.Adapter<ScreenAdapter.ViewHolder
             super(itemView);
            mTitleView=itemView.findViewById(R.id.Title_m);
             mDesc=itemView.findViewById(R.id.Descrit);
+
 
         }
     }
