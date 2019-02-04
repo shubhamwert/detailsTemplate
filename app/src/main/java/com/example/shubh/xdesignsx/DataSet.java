@@ -17,6 +17,10 @@ arrayList.add(new DataWord(1,"adsads","21212"));
     arrayList.add(new DataWord(1,"awfawef11231dsads","21212"));
     arrayList.add(new DataWord(1,"ad123123sads","21212"));
     arrayList.add(new DataWord(1,"4324fdfasd","21212"));
+    for (int i=0;i<1000;i++){
+        arrayList.add(new DataWord(i,"helloTestData"+i," "+i+21212));
+
+    }
 }
 
 
